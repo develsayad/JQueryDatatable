@@ -34,8 +34,8 @@ namespace Core.Web.Controllers
             int pageNumber = int.Parse(Request.Form["draw"]);
             string searchText = Request.Form["search[value]"];
 
-            string sortColumn = Request.Form["order[0][column]"];
-            //var sortColumn = Request.Form["columns[" + Request.Form["order[0][column]"].FirstOrDefault() + "][name]"].FirstOrDefault();
+            string sortColumnIndex = Request.Form["order[0][column]"];
+            var sortColumn = Request.Form["columns[" + Request.Form["order[0][column]"].FirstOrDefault() + "][name]"].FirstOrDefault();
 
             string sortDir = Request.Form["order[0][dir"];
 

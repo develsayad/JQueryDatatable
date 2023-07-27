@@ -31,7 +31,9 @@ $(document).ready(function () {
                     return btnDelete;
                 }
             },
-        ]
+        ],
+
+        //"initComplete": function () { alert('done') }
 
 
 
